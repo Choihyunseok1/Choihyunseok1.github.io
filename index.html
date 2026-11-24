@@ -49,7 +49,7 @@ main>#top{padding-top:56px}
 .icons a:hover{opacity:.75;text-decoration:none}
 .bio h1{font-weight:400;font-size:1.875rem;margin-bottom:14px}
 .bio p{margin:0 0 12px}
-.bio-meta{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px;margin-top:22px}
+.bio-meta{margin-top:22px}
 .bio-meta h3{font-size:1rem;font-weight:600;margin-bottom:8px}
 .interests{margin:0;padding-left:18px;font-size:.9375rem}
 .interests li{margin-bottom:2px}
@@ -94,7 +94,6 @@ footer>.frame{padding-block:24px max(28px,env(safe-area-inset-bottom,0px))}
 @media(max-width:760px){main>section{padding-block:44px}main>#top{padding-top:36px}}
 @media(max-width:700px){header nav{display:none}#switch-theme{margin-left:auto}}
 @media(max-width:640px){.paper{grid-template-columns:minmax(0,1fr);gap:12px}.preview{order:-1}}
-@media(max-width:560px){.bio-meta{grid-template-columns:minmax(0,1fr);gap:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 @media print{header,footer{display:none}.frame{padding-inline:0}main>section,main>#top{padding-block:12px}.hero,.split{grid-template-columns:minmax(0,1fr);gap:12px}.identity img,.preview{display:none}.paper{grid-template-columns:minmax(0,1fr)}}
 </style>
@@ -102,7 +101,7 @@ footer>.frame{padding-block:24px max(28px,env(safe-area-inset-bottom,0px))}
 <body>
 <header><div class="frame">
 <a href="#top" class="wordmark">Hyunseok Choi</a>
-<nav aria-label="Sections"><a href="#publications">Publications</a><a href="#news">News</a><a href="#experience">Experience</a><a href="#awards">Awards</a></nav>
+<nav aria-label="Sections"><a href="#publications">Publications</a><a href="#news">News</a><a href="#experience">Education &amp; Research</a><a href="#awards">Awards</a></nav>
 <button id="switch-theme" type="button" aria-label="Toggle dark mode"><i class="fa-solid fa-moon" aria-hidden="true"></i></button>
 </div></header>
 <main>
@@ -122,7 +121,6 @@ footer>.frame{padding-block:24px max(28px,env(safe-area-inset-bottom,0px))}
     <p>I am also interested in online HD mapping and closed-loop evaluation of driving systems.</p>
     <div class="bio-meta">
       <div><h3>Interests</h3><ul class="interests"><li>Autonomous Driving Perception</li><li>RAW-domain Object Detection</li><li>Camera ISP &amp; Sensor Calibration</li><li>Online HD Mapping</li></ul></div>
-      <div><h3>Education</h3><ul class="edu"><li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><div class="degree">B.S. in Automotive Engineering, 2021 – Present</div><div class="school">Hanyang University</div></li></ul></div>
     </div>
   </div>
 </div></section>
@@ -139,13 +137,17 @@ footer>.frame{padding-block:24px max(28px,env(safe-area-inset-bottom,0px))}
   </ul>
 </div></section>
 <section id="experience"><div class="frame split">
-  <div><h2>Experience</h2></div>
+  <div><h2>Education &amp; Research</h2></div>
   <ul class="work">
     <li><div class="job-line"><strong>Undergraduate Researcher</strong><time>2026.01 – Present</time></div><div class="org"><a href="https://ircv.hanyang.ac.kr/">IRCV Lab, Hanyang University</a> · Advisor: Prof. Soonmin Hwang</div><p>Vehicle-mounted camera data collection, Bayer RAW and ISP comparisons for low-light object detection, and IMX392 photon-transfer calibration.</p></li>
+    <li><div class="job-line"><strong>B.S. Candidate in Automotive Engineering</strong><time datetime="2021-03">2021.03 – Present</time></div><div class="org">Hanyang University</div></li>
+  </ul>
+</div></section>
+<section id="projects"><div class="frame split">
+  <div><h2>Selected Projects</h2></div>
+  <ul class="work">
     <li><div class="job-line"><strong>Low-Light 3D Object Detection</strong><time>2026</time></div><div class="org">Automotive Engineering Capstone · Hanyang University</div><p>Contributed to RAW capture and sensor calibration. Cross-checked 65,536 per-pixel calibration records between CSV and NPZ exports.</p></li>
     <li><div class="job-line"><strong>RAW Rig</strong><time>2026.10</time></div><div class="org"><a href="https://github.com/Choihyunseok1/RAW-Rig">Open-source project</a></div><p>Developed a Python/Qt tool for Bayer RAW acquisition and sensor-noise characterization with Spinnaker camera control and PTP capture scheduling.</p></li>
-    <li><div class="job-line"><strong>RAW Image Preview</strong><time>2026.06</time></div><div class="org"><a href="https://github.com/Choihyunseok1/vscode-raw-image-preview">VS Code extension</a></div><p>Built an editor for inspecting RAW, Bayer, and NumPy images with channel views and exposure controls.</p></li>
-    <li><div class="job-line"><strong>Trailer Lane Following</strong><time>2026 Spring</time></div><div class="org"><a href="https://github.com/Choihyunseok1/Trailer-E2E-Lane-Following">Embedded AI team project</a></div><p>Designed and 3D-printed camera mounts, and calibrated bird’s-eye-view geometry and trailer angle estimation for a team prototype.</p></li>
   </ul>
 </div></section>
 <section id="awards"><div class="frame split">
