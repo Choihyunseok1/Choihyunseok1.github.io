@@ -86,9 +86,12 @@ main>#top{padding-top:56px}
 .work time{font-size:.875rem}
 .work .org{color:var(--secondary)}
 .work p{margin:4px 0 0}
-.honors{gap:13px}
-.honors li{grid-template-columns:52px minmax(0,1fr);gap:12px}
-.honors .certificate{display:inline-block;margin-top:3px;font-size:.8125rem}
+.honors{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.honors li{display:flex;min-width:0;flex-direction:column;gap:10px}
+.honors .certificate{display:block;width:100%;max-width:340px;margin-top:auto;border:1px solid var(--rule);border-radius:5px;overflow:hidden;background:#fff}
+.honors .certificate img{display:block;width:100%;height:auto}
+@media(max-width:540px){.honors{grid-template-columns:minmax(0,1fr);gap:24px}}
+@media print{.honors .certificate{display:none}}
 footer{border-top:1px solid var(--rule);text-align:center;color:var(--secondary);font-size:.8125rem}
 footer>.frame{padding-block:24px max(28px,env(safe-area-inset-bottom,0px))}
 @media(max-width:860px){.hero,.split{grid-template-columns:minmax(0,1fr)}.hero{gap:32px}.split{gap:20px}}
@@ -154,8 +157,14 @@ footer>.frame{padding-block:24px max(28px,env(safe-area-inset-bottom,0px))}
 <section id="awards"><div class="frame split">
   <div><h2>Awards &amp; Honors</h2></div>
   <ul class="honors">
-    <li><time datetime="2026-11-23">2026</time><div><strong>Top Excellence Award <span lang="ko">(최우수상)</span></strong>, Future Automotive Engineering Capstone Design Competition, Hanyang University<br>3DRAW: 3D Object Detection from RAW Images in Extreme Conditions<br><a class="certificate" href="awards/3draw-capstone-certificate-2026.pdf" aria-label="View 3DRAW Capstone certificate (PDF)">Certificate (PDF) ↗</a></div></li>
-    <li><time datetime="2025-12-19">2025</time><div><strong>Grand Prize <span lang="ko">(대상)</span></strong>, Techno-Management CEO Camp, Hanyang University College of Engineering<br>HY-FIVE / CLIPCASE<br><a class="certificate" href="awards/hy-five-ceo-camp-certificate-2025.jpg" aria-label="View HY-FIVE CEO Camp certificate">Certificate ↗</a></div></li>
+    <li>
+      <div><time datetime="2026-11-23">2026</time><br><strong>Top Excellence Award <span lang="ko">(최우수상)</span></strong><br>Future Automotive Engineering Capstone Design Competition, Hanyang University<br>3DRAW: 3D Object Detection from RAW Images in Extreme Conditions</div>
+      <a class="certificate" href="awards/3draw-capstone-certificate-2026.png" aria-label="View full-size 3DRAW Top Excellence Award certificate"><img src="awards/3draw-capstone-certificate-2026.png" alt="3DRAW Top Excellence Award certificate from Hanyang University" width="1191" height="1684" loading="lazy" decoding="async"></a>
+    </li>
+    <li>
+      <div><time datetime="2025-12-19">2025</time><br><strong>Grand Prize <span lang="ko">(대상)</span></strong><br>Techno-Management CEO Camp, Hanyang University College of Engineering<br>HY-FIVE / CLIPCASE</div>
+      <a class="certificate" href="awards/hy-five-ceo-camp-certificate-2025.jpg" aria-label="View full-size HY-FIVE Grand Prize certificate"><img src="awards/hy-five-ceo-camp-certificate-2025.jpg" alt="HY-FIVE Grand Prize certificate from Hanyang University" width="1440" height="2036" loading="lazy" decoding="async"></a>
+    </li>
   </ul>
 </div></section>
 </main>
